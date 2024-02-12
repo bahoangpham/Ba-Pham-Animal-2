@@ -4,7 +4,7 @@ public class Animal {
 
     protected boolean beingDangerous;
     protected int numberOfLegs;
-    protected String diet;
+    protected String diet ;
 
     //this is a default constructor that sets the default values for the fields
     //this is added to this version 3. By adding this, we can now create an object of the Animal class without passing any parameters
@@ -50,6 +50,10 @@ public class Animal {
 
     public void eat(){
         System.out.print("Animal class: Eating -  ");
+    }
+
+    public String toString(){
+        return ("is being dangerous: " + isBeingDangerous() + ", number of legs: " + getNumberOfLegs() + ", diet: " + getDiet());
     }
 
 
